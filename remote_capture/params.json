@@ -1,0 +1,11 @@
+{
+    "uri"                  :"192.168.2.1",
+    "uri2"                   :"usb:2.17.5",
+    "frequency"             :2402000000,
+    "rf_bandwidth"          :2000000,
+    "sampling_frequency"    :10000000,
+    "gain_control_mode"     :"fast_attack",
+    "buffer_size"           :1048576,
+    "nb_samples"            :1000000,
+    "out_file"              :"capture.iq16"
+}
