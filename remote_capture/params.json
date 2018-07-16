@@ -1,6 +1,6 @@
 {
-    "uri"                  :"192.168.2.1",
-    "uri2"                   :"usb:2.17.5",
+    "uri"                  :"ip:192.168.2.1",
+    "uri2"                   :"usb:3.8.5",
     "frequency"             :2402000000,
     "rf_bandwidth"          :2000000,
     "sampling_frequency"    :10000000,
