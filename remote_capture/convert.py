@@ -2,7 +2,7 @@ from array import array
 import json
 import os
 
-prm = json.load(open("params.json"))
+prm = json.load(open("../config.json"))
 
 #output from the capture is used as input for the conversion
 input_file = open(prm["out_file"], 'rb')
