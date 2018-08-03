@@ -21,7 +21,7 @@ echo 1 > /sys/class/leds/led0\:green/brightness
 echo "capture start @ $(date +"%T")" > capture.info
 
 #capture command
-iio_readdev -b 1048576 -s 1000000 cf-ad9361-lpc > capture.iq16
+iio_readdev -b 1048576 -s 30000000 cf-ad9361-lpc > capture.iq16
 
 echo 0 > /sys/class/leds/led0\:green/brightness
 echo "capture stop @ $(date +"%T")" >> capture.info
