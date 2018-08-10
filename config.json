@@ -1,12 +1,12 @@
 {
     "uri"                  :"ip:192.168.2.1",
     "uri2"                   :"usb:3.8.5",
-    "frequency"             :2402000000,
+    "frequency"             :869000000,
     "rf_bandwidth"          :2000000,
-    "sampling_frequency"    :4000000,
+    "sampling_frequency"    :5000000,
     "gain_control_mode"     :"fast_attack",
     "buffer_size"           :1048576,
     "nb_samples"            :1000000,
-    "out_file"              :"../capture.iq8",
-    "conv_file"              :"../capture.complex"
+    "out_file"              :"../garage/21_11_22_capture.iq8",
+    "conv_file"              :"../garage/21_11_22_capture.complex"
 }

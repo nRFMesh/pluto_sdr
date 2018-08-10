@@ -1,6 +1,7 @@
 from array import array
 import json
 import os
+import numpy as np
 
 prm = json.load(open("../config.json"))
 
@@ -22,5 +23,11 @@ print("loaded %d shorts"%(len(short_array)))
 output_file = open(prm["conv_file"], 'wb')
 float_array = array('f', short_array)
 print("converting %d floats"%(len(float_array)))
+
+if(file_extension == '.iq8'):
+    float_array = np.array(float_array)
+    float_array = float_array - 127.5
+    np.multiply(float_array, 0.5)
+
 float_array.tofile(output_file)
 output_file.close()

@@ -12,7 +12,7 @@ echo 0 > /sys/class/leds/led0\:green/brightness
 sleep 1
 
 #configure the capture parameters
-iio_attr -q -u "local:" -c ad9361-phy altvoltage0 frequency 2402000000
+iio_attr -q -u "local:" -c ad9361-phy altvoltage0 frequency 869000000
 iio_attr -q -i -u "local:" -c ad9361-phy voltage0 rf_bandwidth 2000000
 iio_attr -q -i -u "local:" -c ad9361-phy voltage0 sampling_frequency 16000000
 iio_attr -q -i -u "local:" -c ad9361-phy voltage0 gain_control_mode fast_attack
